@@ -3,8 +3,6 @@ package com.example.back_students_test_task.controller;
 import com.example.back_students_test_task.model.Student;
 import com.example.back_students_test_task.service.StudentsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,8 +34,8 @@ public class StudentsController {
         studentsService.update((student));
     }
 
-    @RequestMapping("/{id}")
-    @DeleteMapping
+//    @RequestMapping("/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         studentsService.deleteById(id);
     }

@@ -12,13 +12,13 @@ import java.util.stream.Collectors;
 import static java.util.function.Predicate.not;
 
 @Service
-public class StudentsServiceImpl implements StudentService{
+public class StudentsServiceImpl implements StudentService {
     List<Student> students = new ArrayList<>();
     Long counter = 2L;
 
     @PostConstruct
     void init() {
-        students.add(new Student(1L,"Смирнов", "Борис", "Иванович", LocalDate.of(2002, 1, 5).toString(), "Биоинформатика"));
+        students.add(new Student(1L, "Смирнов", "Борис", "Иванович", LocalDate.of(2002, 1, 5).toString(), "Биоинформатика"));
         students.add(new Student(2L, "Гаврилова", "Анна", "Николаевна",
                 LocalDate.of(2005, 4, 17).toString(), "Электроэнергетика"));
     }
