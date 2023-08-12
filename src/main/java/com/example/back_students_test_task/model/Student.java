@@ -1,5 +1,7 @@
 package com.example.back_students_test_task.model;
 
+import java.util.Objects;
+
 public class Student {
 
     public Long id;

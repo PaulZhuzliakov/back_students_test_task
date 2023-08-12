@@ -14,6 +14,8 @@ import static java.util.function.Predicate.not;
 @Service
 public class StudentsServiceImpl implements StudentService {
     List<Student> students = new ArrayList<>();
+
+    //замена primary key :)
     Long counter = 2L;
 
     @PostConstruct
